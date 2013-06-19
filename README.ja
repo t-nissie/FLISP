@@ -1,0 +1,16 @@
+= FLISP: LISP written in Fortran
+
+== References
+Ref.1: wasabiz: Picric
+       https://github.com/wasabiz/Picric
+
+Ref.2: wasabiz:『CPS変換したかったのでCPS変換するSchemeインタプリタ作った』
+       http://wasabiz.hatenablog.com/entry/20110813/1313242459
+
+Ref.3: wasabiz:『Schemeインタプリタ作ったので実装の方針とか苦労した点などまとめてみる』
+       http://wasabiz.hatenablog.com/entry/20110815/1313400400
+
+Ref.4: "How do you cast an integer to a pointer?"
+       http://compgroups.net/comp.lang.fortran/how-do-you-cast-an-integer-to-a-pointer/599876
+       > > I can't see how to cast an integer to a pointer.
+       > You can't.
