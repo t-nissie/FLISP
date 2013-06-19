@@ -3,19 +3,20 @@
 !!
 module expr_module
   use, intrinsic :: iso_c_binding
-
   implicit none
-  integer, parameter :: TYPE_NIL       =  0
-  integer, parameter :: TYPE_TRUE      =  1
-  integer, parameter :: TYPE_PAIR      =  2 
-  integer, parameter :: TYPE_INTEGER   =  3
-  integer, parameter :: TYPE_STRING    =  4
-  integer, parameter :: TYPE_SYMBOL    =  5
-  integer, parameter :: TYPE_CLOSURE   =  6
-  integer, parameter :: TYPE_PRIMITIVE =  7
-  integer, parameter :: TYPE_INTERNAL  =  8
-  integer, parameter :: TYPE_FLOAT     =  9
-  integer, parameter :: TYPE_COMPLEX   = 10
+  enum, bind(c)
+    enumerator :: TYPE_NIL
+    enumerator :: TYPE_TRUE
+    enumerator :: TYPE_PAIR
+    enumerator :: TYPE_INTEGER
+    enumerator :: TYPE_STRING
+    enumerator :: TYPE_SYMBOL
+    enumerator :: TYPE_CLOSURE
+    enumerator :: TYPE_PRIMITIVE
+    enumerator :: TYPE_INTERNAL
+    enumerator :: TYPE_FLOAT
+    enumerator :: TYPE_COMPLEX
+  end enum
 
   type expr_type
      integer :: type
