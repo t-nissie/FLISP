@@ -4,7 +4,8 @@ FC     = gfortran
 FFLAGS = -Wall -g -ffree-form
 TESTS = expr_module_test
 
-all: $(TESTS)
+check: $(TESTS)
+	./expr_module_test
 
 expr_module_test: expr_module.o expr_module_test.o
 	$(FC) $(FFLAGS) -o $@ $^
