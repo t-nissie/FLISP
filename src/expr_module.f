@@ -49,30 +49,6 @@ contains
     a%data = data
   end function new_atom
 
-  function new_atom_integer(i) result(a)
-    implicit none
-    integer, intent(in)      :: i
-    type(expr_type), pointer :: a
-    integer, pointer         :: p
-    allocate(a)
-    allocate(p)
-    a%type = TYPE_INTEGER
-    p = i
-    a%data = c_loc(p)
-  end function new_atom_integer
-
-  function new_atom_float(f) result(a)
-    implicit none
-    real*8, intent(in)       :: f
-    type(expr_type), pointer :: a
-    real*8, pointer          :: p
-    allocate(a)
-    allocate(p)
-    a%type = TYPE_FLOAT
-    p = f
-    a%data = c_loc(p)
-  end function new_atom_float
-
   function new_pair(head, tail) result(p)
     implicit none
     type(expr_type), pointer, intent(in) :: head
