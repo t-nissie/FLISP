@@ -1,4 +1,5 @@
 = FLISP: LISP written in Fortran
+FLISP is an implementation of LISP written in Fortran.
 
 == References
 Ref.1: wasabiz: Picric
